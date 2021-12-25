@@ -1,0 +1,1 @@
+BlogX is a blog PHP REST API with complete CRUD operations. The data from the API is to be consumed from a public facing client
