@@ -14,6 +14,7 @@
 
     # Instantiate blog post object
     $post = new Post($db);
+    
 
     # Get Posted Data
     $data = json_decode(file_get_contents('php://input'));
@@ -28,13 +29,13 @@
     {
         echo json_encode
         (
-            array('message' => 'Post created.')
+            array('message' => 'Post created successfully.')
         );
     }
     else
     {
         echo json_encode
         (
-            array('message' => 'Post not created.')
+            array('error' => 'Post not created.')
         );
     }
